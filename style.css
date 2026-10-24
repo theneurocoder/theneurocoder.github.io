@@ -41,7 +41,7 @@ nav {
 }
 
 .banner {
-  width: 100vw;
+  width: calc(100vw - 100px);
 }
 
 h1 {
