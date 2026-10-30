@@ -193,7 +193,7 @@ section h2 {
     margin: 10px 20px;
   }
 
-  h1 {
+  h1:not(.name) {
     margin-top: 4rem;
   }
 
