@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Neurocoder | Web Designer & Full-Stack Developer</title>
+    <title>The Neurocoder | Web Designer &amp; Full-Stack Developer</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="/">Home</a> |
+        <a href="/">Home</a>
         <a href="/about.html">About me</a>
       </nav>
     </header>
     <img
       class="banner"
       src="/images/banner.png"
-      alt="A banner that says the neurocoder, UI/UX designer, full-stack developer, accessibility advocate"
+      alt="A banner that says, “The neurocoder, UI/UX designer, full-stack developer, accessibility advocate.”"
     />
     <main>
-      <div class="name">
-        <h1>Hi, I’m...</h1>
-        <h2>The NeuroCoder</h2>
+      <div class="name-content-container">
+        <div class="name-intro">Hi, I’m...</div>
+        <h1 class="name"><span class="brackets">{{</span> TheNeuroCoder <span class="brackets">}}</span></h1>
       </div>
       <section>
         <h2>The meaning behind the name</h2>
@@ -48,13 +48,37 @@
       </section>
 
       <section>
-        <h2>Progress bar</h2>
-        <ul>
-          <li>HTML: 85%</li>
-          <li>CSS: 75%</li>
-          <li>JavaScript: 70%</li>
-          <li>Python: 50%</li>
-          <li>PHP: 55%</li>
+        <ul class="progress-content-container">
+          <li class="progress-bar-grid">
+            HTML:
+            <div class="progress-bar-row">
+              <div id="html-progress" class="progress"></div>
+            </div><div class="progress-percentage-row">85%</div>
+          </li>
+          <li class="progress-bar-grid">
+            CSS:
+            <div class="progress-bar-row">
+              <div id="css-progress" class="progress"></div>
+            </div><div class="progress-percentage-row">75%</div>
+          </li>
+          <li class="progress-bar-grid">
+            JavaScript:
+            <div class="progress-bar-row">
+              <div id="js-progress" class="progress"></div>
+            </div><div class="progress-percentage-row">70%</div>
+          </li>
+          <li class="progress-bar-grid">
+            PHP:
+            <div class="progress-bar-row">
+              <div id="php-progress" class="progress"></div>
+            </div><div class="progress-percentage-row">55%</div>
+          </li>
+          <li class="progress-bar-grid">
+            Python:
+            <div class="progress-bar-row">
+              <div id="python-progress" class="progress"></div>
+            </div><div class="progress-percentage-row">50%</div>
+          </li>
         </ul>
       </section>
 
@@ -71,7 +95,7 @@
       <img
         class="logo"
         src="/images/logo.png"
-        alt="A logo with the letter N enclosed in double curly brackets"
+        alt="A logo with the letter N enclosed in double curly brackets."
       />
     </footer>
   </body>
