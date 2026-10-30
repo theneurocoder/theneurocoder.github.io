@@ -243,7 +243,7 @@ section h2 {
     font-family: "Belanosima", sans-serif;
     font-weight: 400;
     color: var(--yellow-colour);
-    font-size: 2.5rem;
+    font-size: 2.45rem;
   }
 
   .brackets {
@@ -257,5 +257,11 @@ section h2 {
 
   .progress-bar-row {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .name {
+    font-size: 2rem;
   }
 }
