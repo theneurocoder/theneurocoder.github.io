@@ -1,0 +1,120 @@
+:root {
+  --white-colour-light-mode: #f5f4f3;
+  --green-colour-light-mode: #347a5b;
+  --red-colour-light-mode: #b85e5e;
+}
+
+body.light-mode {
+  background-color: var(--white-colour-light-mode);
+  color: var(--black-colour);
+}
+
+body.light-mode strong {
+  color: var(--black-colour);
+}
+
+nav.light-mode,
+.progress-content-container.light-mode,
+.progress-bar-row.light-mode {
+  border-color: var(--black-colour);
+}
+
+a.light-mode {
+  color: var(--red-colour-light-mode);
+}
+
+a.light-mode:hover {
+  color: var(--red-colour);
+}
+
+.theme-toggle-container.light-mode,
+#theme-toggle.light-mode {
+  border-color: var(--black-colour);
+}
+
+#theme-toggle.light-mode {
+  left: calc(100% - 30px);
+  /* 30px is width of toggle + left position of icon in dark mode */
+}
+
+.light-mode-icon.light-mode,
+.dark-mode-icon.light-mode {
+  fill: var(--black-colour);
+}
+
+#guest-name.light-mode {
+  border-color: var(--black-colour);
+  caret-color: var(--black-colour);
+  color: var(--black-colour);
+}
+
+#guest-name.light-mode:focus {
+  border-color: var(--green-colour-light-mode);
+}
+
+#guest-name.light-mode::placeholder {
+  color: var(--red-colour-light-mode);
+}
+
+#guest-name-submit-button.light-mode,
+#values-button.light-mode {
+  border-color: var(--black-colour);
+  color: var(--black-colour);
+  transition:
+    background-color 0.4s,
+    color 0.4s;
+}
+
+#guest-name-submit-button.light-mode:hover,
+#values-button.light-mode:hover {
+  background-color: var(--green-colour-light-mode);
+  color: var(--white-colour-light-mode);
+}
+
+h2.light-mode {
+  color: var(--green-colour-light-mode);
+}
+
+.banner-dark-mode.light-mode {
+  display: none;
+}
+
+.banner-light-mode.light-mode {
+  display: inline-block;
+  width: calc(100vw - 100px);
+}
+
+.progress.light-mode {
+  background-color: var(--green-colour-light-mode);
+}
+
+.time-period.light-mode {
+  color: var(--red-colour-light-mode);
+}
+
+.logo-dark-mode.light-mode {
+  display: none;
+}
+
+.logo-light-mode.light-mode {
+  display: inline-block;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .banner-light-mode.light-mode {
+    display: none;
+  }
+
+  .name.light-mode {
+    color: var(--red-colour-light-mode);
+  }
+
+  .brackets.light-mode {
+    color: var(--green-colour-light-mode);
+  }
+}
